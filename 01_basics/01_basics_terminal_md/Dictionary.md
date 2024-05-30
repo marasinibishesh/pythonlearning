@@ -81,3 +81,25 @@ I have masala chai
 ... }
 >>> tea_shop
 {'chai': {'Masala': 'Spicy', 'Ginger': 'Zesty'}, 'Tea': {'Green': 'Fresh', 'Black': 'Strong'}}
+>>> print(tea_shop)
+{'chai': {'Masala': 'Spicy', 'Ginger': 'Zesty'}, 'Tea': {'Green': 'Mild', 'Black': 'Strong'}}
+>>> tea_shop["chai"]
+{'Masala': 'Spicy', 'Ginger': 'Zesty'}
+>>> tea_shop["chai"]["Ginger"]
+'Zesty'
+>>> squared_num={x:x**2 for x in range(6)}
+>>> squared_num                           
+{0: 0, 1: 1, 2: 4, 3: 9, 4: 16, 5: 25}
+>>> squared_num.clear()
+>>> squared_num        
+{}
+>>> keys=["Masala","Ginger","Lemon"]
+>>> keys
+['Masala', 'Ginger', 'Lemon']
+>>> default_value="Delicious"
+>>> new_dict= dict.fromkeys(keys,default_value)
+>>> new_dict
+{'Masala': 'Delicious', 'Ginger': 'Delicious', 'Lemon': 'Delicious'}
+>>> new_dict= dict.fromkeys(keys,keys)          
+>>> new_dict
+{'Masala': ['Masala', 'Ginger', 'Lemon'], 'Ginger': ['Masala', 'Ginger', 'Lemon'], 'Lemon': ['Masala', 'Ginger', 'Lemon']}
